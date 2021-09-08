@@ -108,7 +108,7 @@
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
                                                 </a>
-                                                <a class="btn btn-danger btn-sm" href="#" data-id='{{$employee}}' data-toggle="modal" data-target="#modal-danger">
+                                                <a class="btn btn-danger btn-sm delete" href="#" data-id='{{$employee}}' data-toggle="modal" data-target="#modal-danger">
                                                     <i class="fas fa-trash">
                                                     </i>
                                                 </a>
@@ -149,4 +149,13 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+<script>
+    $(document).on('click','.delete',function(){
+         let id = $(this).attr('data-id');
+         $('#id').val(id);
+    });
+</script>
 @endsection

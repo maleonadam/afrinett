@@ -28,7 +28,7 @@
                                 <button class="btn btn-outline-success btn-sm" type="submit">✔</button>
                                 @endif
                             </form>
-                            <a class="btn btn-danger btn-sm" href="#" data-id='{{$todo->id}}' data-toggle="modal" data-target="#modal-danger">
+                            <a class="btn btn-danger btn-sm delete" href="#" data-id='{{$todo->id}}' data-toggle="modal" data-target="#modal-danger">
                                 <i class="fas fa-trash">
                                 </i>
                             </a>

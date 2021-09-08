@@ -32,9 +32,9 @@
 
 @section('scripts')
 <script>
-    $('.addAttr').click(function() {
-        var id = $(this).data('id');   
-        $('#id').val(id); 
+    $(document).on('click','.delete',function(){
+         let id = $(this).attr('data-id');
+         $('#id').val(id);
     });
 </script>
 @endsection
